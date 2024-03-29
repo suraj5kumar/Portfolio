@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Adding shadow in form box */
+.project_part .project_container .form {
+    box-shadow: rgba(255, 255, 255, 0.342) 0px 5px 15px;
+    background-color: rgba(25, 25, 25, 0.71);
+}
+
+/* Input field placeholder properties */
+.project_part .project_container .form .border-b::placeholder {
+    color: rgba(255, 255, 255, 0.893);
+}
+
+/* Form input field design */
+.project_part .project_container .form .border-b {
+    color: rgba(255, 255, 255, 0.893);
+    border-color: rgba(255, 255, 255, 0.893);
+}
+
+/* Bottom left design */
+.project_part .design1 {
+    height: 100px;
+    width: 110px;
+    position: relative;
+    top: 274px;
+    left: 153px;
+    flex-shrink: 0;
+
+    div {
+        height: 10px;
+        width: 10px;
+        background-color: rgba(151, 151, 151, 0.325);
+        border-radius: 50%;
+    }
+}
+
+/* Top right design */
+.project_part .design2 {
+    height: 100px;
+    width: 110px;
+    position: relative;
+    top: -176px;
+    left: -142px;
+    flex-shrink: 0;
+
+    div {
+        height: 10px;
+        width: 10px;
+        background-color: rgba(151, 151, 151, 0.325);
+        border-radius: 50%;
+    }
+}
+
+/* Adding media query */
+@media screen and (max-width:1300px) {
+    .project_part {
+        .project_container {
+            
+            .heading .title h1 {
+                /* font-size: 18px; */
+                margin: 0 20px;
+            }
+
+            .heading .rounded{
+                width: 150px;
+            }
+
+            .form .project_details {
+                column-gap: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .project_part {
+        height: 850px;
+
+        .design1 {
+            top: 367px;
+            left: 126px;
+        }
+
+        .design2 {
+            top: -236px;
+            left: -115px;
+        }
+
+        .project_container {
+            height: 850px;
+
+            .heading .title h1 {
+                font-size: 25px;
+                margin: 0 20px;
+            }
+
+            .heading .rounded {
+                width: 130px;
+            }
+
+            .form {
+                .project_details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 90%;
+                    }
+                }
+
+                .project_budget {
+                    height: 20px;
+
+                    input {
+                        padding: 0;
+                        width: 90%;
+                        padding-bottom: 12px;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+
+                    input {
+                        padding: 0;
+                        width: 90%;
+                        padding-bottom: 12px;
+                    }
+                }
+
+                .contact_us {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .project_part {
+        .design1 {
+            top: 368px;
+            left: 110px;
+        }
+
+        .design2 {
+            top: -236px;
+            left: -103px;
+        }
+
+        .project_container {
+            width: 100%;
+            
+            .heading .title h1 {
+                margin: 0 20px;
+            }
+
+            .heading .rounded{
+                width: 80px;
+            }
+            .form {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .project_part {
+        height: 850px;
+
+        .design1 {
+            height: 80px;
+            width: 90px;
+            top: 370px;
+            left: 102px;
+        }
+
+        .design2 {
+            height: 80px;
+            width: 90px;
+            top: -240px;
+            left: -95px;
+        }
+
+        .project_container {
+            width: 100%;
+
+            .heading .title h1 {
+                font-size: 20px;
+                margin: 0 20px;
+            }
+
+            .heading .rounded {
+                width: 150px;
+            }
+
+            .form {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .project_part {
+        height: 850px;
+
+        .design1 {
+            height: 60px;
+            width: 70px;
+            top: 390px;
+            left: 60px;
+
+            div {
+                height: 7px;
+                width: 7px;
+                border-radius: 50%;
+            }
+        }
+
+        .design2 {
+            height: 60px;
+            width: 70px;
+            top: -245px;
+            left: -50px;
+
+            div {
+                height: 7px;
+                width: 7px;
+                border-radius: 50%;
+            }
+        }
+
+        .project_container {
+            width: 100%;
+
+            .heading .title h1 {
+                font-size: 18px;
+                margin: 0 20px;
+            }
+
+            .form {
+                width: 99%;
+
+                .project_details input {
+                    width: 100%;
+                }
+
+                .project_budget input {
+                    width: 100%;
+                }
+
+                .price input {
+                    width: 100%;
+                }
+
+                .contact_us {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
